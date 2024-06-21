@@ -1,0 +1,68 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family:'Courier New', Courier, monospace;
+    /* background-color: #f0e68c; */
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    /* color: #ff69b4; */
+    /* color: rebeccapurple; */
+    color: rgb(255, 96, 123);
+}
+
+p {
+    color: #555;
+    font-weight: 600;
+}
+
+button {
+    /* background-color: #ff69b4; */
+    background-color: rgb(245, 114, 114);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    /* background-color: #ff1493; */
+    background-color: rgb(255, 5, 47);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Heart */
+
+.heart{
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    font-size: 1.7rem;
+    animation: fall 3s linear forwards;
+    z-index: -1;
+}
+
+@keyframes fall {
+    to{
+        transform: translateY(105vh);
+    }
+}
